@@ -1,0 +1,66 @@
+
+import java.util.*;
+class excep
+{    public static void main (String[]args)
+   {
+        checker c=new checker();
+    c.check1();
+    c.check2();
+    System.out.println("the result of program");
+   }
+}
+class checker 
+{
+    static void check1() throws ArithmeticException,ArrayIndexOutOfBoundsException
+    {
+        Scanner sc1=new Scanner(System.in);
+        System.out.println("Enter the values of A:");
+        int A=sc1.nextInt();
+        Scanner sc2=new Scanner(System.in);
+        System.out.println("Enter the values of B:");
+        int B=sc2.nextInt();
+        try
+        {
+            int r=42/(A-B);
+            System.out.println("result="+r);
+            int []t=new int [5];
+            t[10]=100;
+            
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println("Not divisible by zero");
+            
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("arrayindexisoutbound");
+        }
+    }
+    void check2()throws ArithmeticException
+    {
+        System.out.println("Enter the values of c:");
+        Scanner sc3=new Scanner(System.in);
+        int y=sc3.nextInt();
+    
+    try
+    {
+        if(y<10)
+        {
+            throw new ArithmeticException();
+            
+        }
+        else{
+            System.out.println("the number greater than 10");
+        }
+    }
+    catch(ArithmeticException e)
+    {
+        System.out.println("Invalid entry");
+    }
+    finally
+    {
+        System.out.println("The program is exceuted");
+    }
+}
+}
