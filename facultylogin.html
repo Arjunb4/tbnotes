@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="facultylogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Login Here</h2>
+            <input type="email" placeholder="Email" id="username">
+            <input type="password" placeholder="Password" id="password">
+            <button class="btn" onclick="func()">Login</button>
+        </div>
+    </div>
+    <script>
+        function func()
+        {
+            var  email = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if( email == 'muhammed123@gmail.com' && password == '123456')
+        {
+            alert("successful")
+            window.location.assign("Content.html");
+        }
+        else
+        {
+            alert("invalid password or username")
+        }
+        }
+      
+    </script>
+</body>
+</html>

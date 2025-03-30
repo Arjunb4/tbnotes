@@ -125,21 +125,19 @@
                         <div class="col-md-12">
                            <div class="infoma">
                               <h3>Feedback</h3>
-                              <form class="form_subscri">
+                              <form action="submit_feedback.php" method="POST" class="form_subscri">
                                  <div class="row">
-                                    <div class="col-md-12">
-                                    </div>
-                                    <div class="col-md-4">
-                                       <input class="newsl" placeholder="Enter your email" type="text" name="Enter your email">
-                                    </div>
-                                    <div class="col-md-4">
-                                       <input class="newsl" placeholder="Enter the message" type="text" name="Message">
-                                    </div>
-                                    <div class="col-md-4">
-                                       <button class="subsci_btn">send</button>
-                                    </div>
+                                     <div class="col-md-4">
+                                         <input class="newsl" placeholder="Enter your email" type="email" name="email" required>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <input class="newsl" placeholder="Enter your message" type="text" name="message" required>
+                                     </div>
+                                     <div class="col-md-4">
+                                         <button type="submit" class="subsci_btn">Send</button>
+                                     </div>
                                  </div>
-                              </form>
+                             </form>
                            </div>
                         </div>
                         <div class="col-md-9">
